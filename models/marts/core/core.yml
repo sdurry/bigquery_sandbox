@@ -46,7 +46,7 @@ models:
         data_type: string
         tests:
           - accepted_values:
-              values: ['AFRICA','MIDDLE EAST','ASIA','EUROPE']
+              values: ['AFRICA','MIDDLE EAST','ASIA','EUROPE','AMERICA']
               severity: warn
         meta:
           data_type: string
