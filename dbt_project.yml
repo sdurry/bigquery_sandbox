@@ -13,6 +13,7 @@ profile: 'bigquery_demo'
 # The `model-paths` config, for example, states that models in this project can be
 # found in the "models/" directory. You probably won't need to change these!
 model-paths: ["models"]
+test-paths: ["tests"]
 macro-paths: ["macros"]
 docs-paths: ["docs"]
 
