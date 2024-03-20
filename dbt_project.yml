@@ -32,7 +32,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   bigquery_demo_project:
       marts:
-        materialized: view
+        materialized: table
+      staging_external:
+        enabled: false
         
 vars:
   start_date: '1996-01-01'
