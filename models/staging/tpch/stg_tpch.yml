@@ -83,7 +83,7 @@ models:
               to: ref('stg_tpch_customer')
               field: customer_key
       - name: status_code
-        data_type: bool
+        data_type: string(1)
         description: status of the order
       - name: total_price
         data_type: float64

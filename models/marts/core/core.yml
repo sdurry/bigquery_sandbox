@@ -59,6 +59,9 @@ models:
         data_type: string
     versions: 
       - v: 1
+        deprecation_date: 2024-06-30 00:00:00.00+00:00
+        # dbt does not automatically synchronize deprecation_date and hours_to_expiration, 
+        # but users may want to coordinate them in some fashion
         config:
           alias: dim_customers
           materialised: table
@@ -207,7 +210,7 @@ models:
         data_type: date
       - name: status_code
         description: status of the order
-        data_type: string
+        data_type: string(1)
       - name: priority_code
         description: code associated with the order
         data_type: string
