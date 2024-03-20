@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: tpch_raw
+  - name: tpch_external
     schema: raw
     loader: gcloud storage
   
