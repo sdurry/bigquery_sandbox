@@ -21,20 +21,6 @@ models:
       - name: customer_key
         description: Primary key on the customers table
         data_type: int64
-        meta:
-          data_type: int64
-          row_count: 150000.0
-          not_null_proportion: 1.0
-          distinct_proportion: 1.0
-          distinct_count: 150000
-          is_unique: true
-          min: '1'
-          max: '150000'
-          avg: 75000.5
-          median: 74973.0
-          std_dev_population: 43301.27018825968
-          std_dev_sample: 43301.414526548666
-          profiled_at: '2023-12-15 11:27:42.462301+00'
         constraints:
           - type: not_null
           - type: primary_key 
@@ -48,141 +34,29 @@ models:
           - accepted_values:
               values: ['AFRICA','MIDDLE EAST','ASIA','EUROPE', 'AMERICA']
               severity: warn
-        meta:
-          data_type: string
-          row_count: 150000.0
-          not_null_proportion: 1.0
-          distinct_proportion: 3.3333e-05
-          distinct_count: 5
-          is_unique: false
-          min: null
-          max: null
-          avg: null
-          median: null
-          std_dev_population: null
-          std_dev_sample: null
-          profiled_at: '2023-12-15 11:27:42.462301+00'
       - name: name
         description: name of the customers
         data_type: string
-        meta:
-          data_type: string
-          row_count: 150000.0
-          not_null_proportion: 1.0
-          distinct_proportion: 1.0
-          distinct_count: 150000
-          is_unique: true
-          min: null
-          max: null
-          avg: null
-          median: null
-          std_dev_population: null
-          std_dev_sample: null
-          profiled_at: '2023-12-15 11:27:42.462301+00'
       - name: address
         description: address of the customer
         data_type: string
-        meta:
-          data_type: string
-          row_count: 150000.0
-          not_null_proportion: 1.0
-          distinct_proportion: 1.0
-          distinct_count: 150000
-          is_unique: true
-          min: null
-          max: null
-          avg: null
-          median: null
-          std_dev_population: null
-          std_dev_sample: null
-          profiled_at: '2023-12-15 11:27:42.462301+00'
       - name: nation
         description: nation name
         data_type: string
-        meta:
-          data_type: string
-          row_count: 150000.0
-          not_null_proportion: 1.0
-          distinct_proportion: 0.000166667
-          distinct_count: 25
-          is_unique: false
-          min: null
-          max: null
-          avg: null
-          median: null
-          std_dev_population: null
-          std_dev_sample: null
-          profiled_at: '2023-12-15 11:27:42.462301+00'
       - name: nation_key
         description: 'Nation key'
         data_type: int64
         tests:
          - not_null
-        meta:
-          data_type: int64
-          row_count: 150000.0
-          not_null_proportion: 1.0
-          distinct_proportion: 0.000166667
-          distinct_count: 25
-          is_unique: false
-          min: '0'
-          max: '24'
-          avg: 12.003473333333305
-          median: 12.0
-          std_dev_population: 7.204889631536514
-          std_dev_sample: 7.204913647955368
-          profiled_at: '2023-12-15 11:27:42.462301+00'
       - name: phone_number
         description: phone number of the customer
         data_type: string
-        meta:
-          data_type: string
-          row_count: 150000.0
-          not_null_proportion: 1.0
-          distinct_proportion: 0.999933333
-          distinct_count: 149990
-          is_unique: false
-          min: null
-          max: null
-          avg: null
-          median: null
-          std_dev_population: null
-          std_dev_sample: null
-          profiled_at: '2023-12-15 11:27:42.462301+00'
       - name: account_balance
         description: '{{ doc("account_balance") }}'
         data_type: float64
-        meta:
-          data_type: float64
-          row_count: 150000.0
-          not_null_proportion: 1.0
-          distinct_proportion: 0.934873333
-          distinct_count: 140231
-          is_unique: false
-          min: '-999.98'
-          max: '9999.96'
-          avg: 4489.094623599985
-          median: 4494.72
-          std_dev_population: 3177.4690909043766
-          std_dev_sample: 3177.479682520971
-          profiled_at: '2023-12-15 11:27:42.462301+00'
       - name: market_segment
         description: market segment of the customer
         data_type: string
-        meta:
-          data_type: string
-          row_count: 150000.0
-          not_null_proportion: 1.0
-          distinct_proportion: 3.3333e-05
-          distinct_count: 5
-          is_unique: false
-          min: null
-          max: null
-          avg: null
-          median: null
-          std_dev_population: null
-          std_dev_sample: null
-          profiled_at: '2023-12-15 11:27:42.462301+00'
     versions: 
       - v: 1
         config:

@@ -1,8 +1,10 @@
 packages:
-- package: dbt-labs/dbt_utils
-  version: 1.1.1
-- package: dbt-labs/dbt_external_tables
-  version: 0.8.7
-- package: data-mie/dbt_profiler
-  version: 0.8.1
-sha1_hash: 9bd9612973b93989f574cfea8c483fa545dfaa40
+  - package: dbt-labs/dbt_utils
+    version: 1.1.1
+  - package: dbt-labs/dbt_external_tables
+    version: 0.8.7
+  - package: data-mie/dbt_profiler
+    version: 0.8.1
+  - package: tnightengale/dbt_meta_testing
+    version: 0.3.6
+sha1_hash: f32b9103de7f106b25d01bb2bff997b13a295882
