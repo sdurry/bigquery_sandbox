@@ -123,11 +123,11 @@ models:
         description: '{{ doc("phone_number") }}'
       - name: account_balance
         description: '{{ doc("account_balance") }}'
-#        tests:
-#          - dbt_expectations.expect_column_median_to_be_between:
-#              min_value: 4237.4
-#              max_value: 4683.4 
-#              severity: warn
+        tests:
+          - dbt_expectations.expect_column_median_to_be_between:
+              min_value: 4237.4
+              max_value: 4683.4 
+              severity: warn
 
  
   - name: fct_order_items
